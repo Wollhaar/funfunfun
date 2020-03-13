@@ -1,7 +1,7 @@
 <?php
 $game = $_GET['game'];
 
-$highscore = new Highscore($game);
+$highscore = new \model\Classes\Data\Highscore($game, 'time');
 if($_GET['highscore'] == 'all') $highscore_list = $highscore->getAll();
 else $highscore_list = $highscore->getTopTen();
 

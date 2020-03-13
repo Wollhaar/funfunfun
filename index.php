@@ -1,5 +1,9 @@
 <?php
-if(isset($_GET)) {
+error_reporting(0);
+include_once 'config.php';
+
+
+if(!empty($_GET['game'])) {
     $template = $_GET['game'];
 }
 else {
