@@ -1,0 +1,18 @@
+{% block highscore %}
+    {% if highscore_list %}
+        <div class="highscore-list">
+        {% if highscore_list|length <= 10 %}
+            <div class="top-ten">
+                <ul class="top-list">
+                {% for row in highscore_list %}
+                    <li>{{ row.place }}. {{ row.name }} {{ row.score }} Zeit (Min:Sek:mSek)</li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% elseif highscore_list|length > 10 %}
+        {% else %}
+            <span><i>Kein Highscore</i></span>
+        {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% extends 'partials/sidebar.html.twig' %}
+
+{% block body %}
+<div class="welcome-box row col-12">
+    <h3>Seid Willkommen!</h3>
+    <p>Ihr die jenigen welchen, welche nach Spa&szlig; und Herausforderung suchen, nach Glanz und Gloria und nach Ruhm und Ehre!</p>
+    <p>Ihr die jenigen, welche den n&auml;chsten Highscore knacken m&ouml;chten.</p>
+    <p>Seid gegr&uuml;&szlig;t, euch erwartet der n&auml;chste Kick. Denn hier jagt ein Kick den n&auml;chsten.</p>
+    <p><b>Muhahahahahahahahaa....</b></p>
+</div>
+<div class="selection row col-12">
+    {{ block('sidebar') }}
+</div>
+{% block body %}
+{% block footer %}{% endblock %}

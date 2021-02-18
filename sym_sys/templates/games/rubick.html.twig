@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% use 'partials/timer.html.twig' %}
+{% use 'partials/sidebar.html.twig' %}
+{% use 'partials/highscore.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+    <div class="game-box row col-12">
+        <div class="discription col-9">
+            <h2 class="title-game font-title">Rubick&acute;s Cube</h2>
+            <p>L&ouml;se einen durcheinander gew&uuml;rfeltenen Rubick&acute;s Cube. Und time deine beste Zeit in der Highscore-Tabelle.</p>
+            {{ block('timer') }}
+        </div>
+        <div class="sidebar col-3">
+            {{ block('sidebar') }}
+        </div>
+        <div class="highscore col-9">
+            {{ block('highscore') }}
+        </div>
+    </div>
+    <script src="{{ asset('js/timer.js') }}" type="text/javascript"></script>
+{% endblock %}

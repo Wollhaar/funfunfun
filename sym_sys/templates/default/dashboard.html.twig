@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% use "partials/sidebar.html.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+<div class="wrapper">
+    <div class="container row col-12">
+        <div class="content col-9">
+            {% include 'includes/content.html.twig' %}
+        </div>
+        <div class="sidebar col-3">
+            {{ block('sidebar') }}
+        </div>
+    </div>
+</div>
+{% endblock %}

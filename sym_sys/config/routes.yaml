@@ -1,0 +1,29 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+impressum:
+    path: /impressum
+    controller: App\Controller\DefaultController::impressum
+
+contact:
+    path: /kontakt
+    controller: App\Controller\DefaultController::contact
+
+faq:
+    path: /faq
+    controller: App\Controller\DefaultController::faq
+
+rubick:
+    path: /rubick
+    controller: App\Controller\GameController::rubick
+
+teris:
+    path: /tetris
+    controller: App\Controller\GameController::tetris
+
+scorelist:
+    path: /list/score
+    controller: App\Controller\Listing::score
+
+    

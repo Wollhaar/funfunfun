@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.4rem;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: yellowgreen;
+}
+a:hover {
+  color: yellow;
+}

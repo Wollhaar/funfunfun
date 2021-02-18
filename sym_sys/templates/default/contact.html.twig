@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+{% use "partials/sidebar.html.twig" %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block body %}
+<div class="wrapper">
+    <div class="container">
+        {{ content }}
+    </div>
+    <div class="sidebar">
+        {{ block('sidebar') }}
+    </div>
+</div>
+{% endblock %}

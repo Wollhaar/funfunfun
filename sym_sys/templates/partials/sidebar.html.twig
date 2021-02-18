@@ -1,0 +1,27 @@
+{% block sidebar %}
+    {% if links is not empty %}
+        <h2>Links:</h2>
+        <ul class="selection-list">
+            {% for link in links %}
+                <li><a href="{{ link.href }}">{{ link.name }}</a></li>
+            {% endfor %}
+        </ul>
+{#    {% elseif game is not empty %}#}
+{#        <h2 class="font-title">Links</h2>#}
+{#        <ul class="sidebar-links--list">#}
+{#            <!--            <li><a href="/funfunfun/index.php?game=rucbick&action=timer">Start Game</a></li>-->#}
+{#            <li><a href="http://speedcube.de/index.php">Spielregeln/Leitfaden</a></li>#}
+{#            <li><a href="#highscore">Highscore</a></li>#}
+{#        </ul>#}
+    {% else %}
+        <h2>Die Auswahl:</h2>
+        <ul class="selection-list">
+            <li><a href="/rubick">Rubick</a></li>
+            <li><a href="/tetris">Tetris</a></li>
+            <li><a href="">Google&acute;s T-Rex</a></li>
+            <li>......</li>
+            <li><a href="">Plain</a></li>
+            <li><a href="#">Empty</a></li>
+        </ul>
+    {% endif %}
+{% endblock %}
